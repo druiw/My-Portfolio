@@ -7,7 +7,7 @@ import DrewSnow from "../../assets/Drew-Snow.jpg";
 import InventoryManager from "../../assets/Inventory.png";
 import MISO from "../../assets/MISO.png";
 import Roadmap from "../../assets/Roadmap.png";
-import Activ from "../../assets/Activ.png";
+import Activ from "../../assets/activ.png";
 import Instagram from "../../assets/instagram.png";
 import { TbPaperclip } from "react-icons/tb";
 import { FaInstagram } from "react-icons/fa";
