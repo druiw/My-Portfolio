@@ -1,10 +1,20 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding: 35px;
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 150px; /* Reduced from 50px */
+  gap: 20px;
+  height: 100vh;
 }
 
 .intro {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,30 +22,120 @@
   font-weight: 700;
   font-size: 2rem;
   color: white;
-  text-align: center;
+  text-align: left;
   text-transform: none; /* Make sure it's not uppercase */
   letter-spacing: normal; /* Fix spacing */
+  width: 100%;
+  padding: 0;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .intro-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  color: #ccc; /* Adjust color as needed */
+  margin-top: 10px; /* Add some space between the title and subtitle */
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #aaa; /* Adjust color as needed */
+  margin-top: 20px; /* Add some space between the subtitle and description */
+  max-width: 600px; /* Limit width for better readability */
 }
 
 .page2 {
-  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 125px;
+  height: 100vh;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 50px;
+  max-width: 1200px; /* keeps content aligned even on wide screens */
+  margin: 0 100px; /* centers the section block */
+}
+
+.about-me-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: "Figtree", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   color: white;
-  text-align: center;
-  text-transform: none; /* Make sure it's not uppercase */
-  letter-spacing: normal; /* Fix spacing */
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  gap: 20px;
+}
+
+.about-me-image-wrapper {
+  height: fit-content;
+}
+
+.about-me-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-me p {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.page3 {
+  display: flex;
+  flex-direction: column;
+  padding: 125px;
+  height: 100vh;
+}
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Figtree", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  gap: 20px;
+  width: 100%;
 }
 
 .custom-class {
