@@ -6,7 +6,7 @@
   right: 0;
   display: flex;
   justify-content: center;
-  padding: 12px; /* breathing room from edges */
+  padding: 12px;
   z-index: 50;
 }
 
@@ -50,7 +50,7 @@
 .mobile-menu {
   position: absolute;
   top: calc(100% + 8px);
-  right: 20px; /* aligns with navbar padding */
+  right: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -89,7 +89,6 @@
   }
 }
 
-/* optional: prevent your content from hiding beneath the fixed bar */
 body {
   padding-top: 72px;
-} /* adjust to your navbar height */
+}

@@ -226,8 +226,8 @@ img {
 }
 
 .social-icons {
-  grid-column: 1 / -1; /* span full grid */
-  justify-self: center; /* center the grid item itself */
+  grid-column: 1 / -1;
+  justify-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
