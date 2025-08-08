@@ -2,10 +2,17 @@ import React from "react";
 import "./Main.css";
 import GradientText from "../GradientText/GradientText";
 import Navbar from "../Navbar/Navbar";
+import Me from "../../assets/Me.jpg";
 import DrewSnow from "../../assets/Drew-Snow.jpg";
 import InventoryManager from "../../assets/Inventory.png";
 import MISO from "../../assets/MISO.png";
 import Roadmap from "../../assets/Roadmap.png";
+import Activ from "../../assets/Activ.png";
+import Instagram from "../../assets/instagram.png";
+import { TbPaperclip } from "react-icons/tb";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { CgMail } from "react-icons/cg";
 
 const Main = () => {
   return (
@@ -14,7 +21,7 @@ const Main = () => {
       <div className='intro-wrapper'>
         <div className='intro'>
           <div className='intro-text'>
-            <img src={DrewSnow} alt='Drew Snow' className='profile-image' />
+            <img src={Me} alt='Drew Snow' className='profile-image' />
             <h1>
               Hey, I'm{" "}
               <GradientText
@@ -42,7 +49,7 @@ const Main = () => {
           <div className='about-me'>
             <h1>About Me</h1>
             <p>
-              I'm Drew Igoe. Computer Science student in Tempe, from Boston, MA.
+              I'm Drew Igoe. Computer Science Student in Tempe, from Boston, MA.
             </p>
             <p>
               I focus on software development and UI/UX design, creating
@@ -61,15 +68,20 @@ const Main = () => {
       </div>
 
       {/* ---- PROJECTS ---- */}
-      <div className='page3'>
+      <div className='page3' id='projects'>
         <div className='section-wrapper projects-wrapper'>
           <div className='projects'>
-            <h1>Projects</h1>
+            <h1>Featured Projects</h1>
             <div className='project-row'>
               <img
                 className='project-image'
                 src={InventoryManager}
                 alt='Inventory Manager'
+                onClick={() =>
+                  (window.location.href =
+                    "https://inventory-manager-nine-iota.vercel.app/")
+                }
+                style={{ cursor: "pointer" }}
               />
               <div className='project-text'>
                 <h2 className='project-title'>Inventory Manager</h2>
@@ -82,6 +94,18 @@ const Main = () => {
                   cloud database management.
                 </p>
                 <p className='project-desc'>React • JavaScript • Supabase</p>
+                <div className='link-button-wrapper'>
+                  <div
+                    className='link-button'
+                    onClick={() =>
+                      (window.location.href =
+                        "https://inventory-manager-nine-iota.vercel.app/")
+                    }
+                  >
+                    <TbPaperclip />
+                    <p>View Project</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -89,7 +113,11 @@ const Main = () => {
               <img
                 className='project-image'
                 src={MISO}
-                alt='Inventory Manager'
+                alt='MISO'
+                onClick={() =>
+                  (window.location.href = "https://miso-gray.vercel.app/")
+                }
+                style={{ cursor: "pointer" }}
               />
               <div className='project-text'>
                 <h2 className='project-title'>MISO</h2>
@@ -102,6 +130,18 @@ const Main = () => {
                   development.
                 </p>
                 <p className='project-desc'>HTML • CSS • JavaScript</p>
+                <div className='link-button-wrapper'>
+                  <div
+                    className='link-button'
+                    onClick={() =>
+                      (window.location.href =
+                        "https://inventory-manager-nine-iota.vercel.app/")
+                    }
+                  >
+                    <TbPaperclip />
+                    <p>View Project</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -109,7 +149,12 @@ const Main = () => {
               <img
                 className='project-image'
                 src={Roadmap}
-                alt='Inventory Manager'
+                alt='Roadmap-Image'
+                onClick={() =>
+                  (window.location.href =
+                    "https://roadmap-generator-gamma.vercel.app/")
+                }
+                style={{ cursor: "pointer" }}
               />
               <div className='project-text'>
                 <h2 className='project-title'>Roadmap Generator</h2>
@@ -125,8 +170,81 @@ const Main = () => {
                 <p className='project-desc'>
                   HTML • CSS • JavaScript • OpenAI API
                 </p>
+                <div className='link-button-wrapper'>
+                  <div
+                    className='link-button'
+                    onClick={() =>
+                      (window.location.href =
+                        "https://inventory-manager-nine-iota.vercel.app/")
+                    }
+                  >
+                    <TbPaperclip />
+                    <p>View Project</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div className='project-row'>
+              <img
+                className='project-image'
+                src={Activ}
+                alt='Inventory Manager'
+                onClick={() =>
+                  (window.location.href = "https://github.com/druiw/Activ")
+                }
+                style={{ cursor: "pointer" }}
+              />
+              <div className='project-text'>
+                <h2 className='project-title'>Activ</h2>
+                <p className='project-desc'>
+                  A mobile fitness tracking app concept designed to deliver a
+                  clean, modern, and intuitive user experience. Features a
+                  calendar-based workout tracker, detailed stats dashboard, and
+                  quick navigation tabs for effortless use. Built as a UI/UX
+                  design showcase, demonstrating skills in mobile interface
+                  design, layout structuring, and responsive component creation.
+                </p>
+                <p className='project-desc'>Swift • SwiftUI</p>
+                <div className='link-button-wrapper'>
+                  <div
+                    className='link-button'
+                    onClick={() =>
+                      (window.location.href =
+                        "https://inventory-manager-nine-iota.vercel.app/")
+                    }
+                  >
+                    <TbPaperclip />
+                    <p>View Project on Github</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='page4'>
+        <div className='section-wrapper contact-wrapper'>
+          <div className='contact'>
+            <h1>Get In Touch</h1>
+          </div>
+          <div className='social-icons'>
+            <FaInstagram
+              onClick={() =>
+                (window.location.href = "https://www.instagram.com/drustir/")
+              }
+            />
+            <CgMail
+              onClick={() =>
+                (window.location.href = "mailto:drewigoe.swe@gmail.com")
+              }
+            />
+            <FaLinkedin
+              onClick={() =>
+                (window.location.href = "https://www.linkedin.com/in/drewigoe/")
+              }
+            />
           </div>
         </div>
       </div>

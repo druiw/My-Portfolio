@@ -29,7 +29,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: var(--space-5);
-  gap: var(--space-6);
+  gap: var(--space-5);
 }
 
 .page2 {
@@ -37,6 +37,10 @@ img {
 }
 
 .page3 {
+  padding-block: clamp(40px, 8vw, 120px);
+}
+
+.page4 {
   padding-block: clamp(40px, 8vw, 120px);
 }
 
@@ -117,7 +121,8 @@ img {
 }
 
 .about-me > h1,
-.projects > h1 {
+.projects > h1,
+.contact > h1 {
   font-family: "Figtree", sans-serif;
   font-weight: 700;
   color: #fff;
@@ -164,7 +169,7 @@ img {
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
   gap: clamp(20px, 4vw, 48px);
-  margin-bottom: 175px;
+  margin-bottom: 50px;
 }
 
 .project-image {
@@ -189,6 +194,57 @@ img {
 .project-desc {
   font-size: var(--fs-body);
   color: #ccc;
+}
+
+.project-link-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.link-button {
+  display: inline-flex;
+  width: fit-content;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  padding: 10px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.link-button p {
+  margin: 0;
+}
+
+.contact-wrapper {
+  justify-items: start;
+}
+
+.social-icons {
+  grid-column: 1 / -1; /* span full grid */
+  justify-self: center; /* center the grid item itself */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+  gap: 50px;
+  cursor: pointer;
 }
 
 /* Breakpoints */
