@@ -35,60 +35,28 @@
   cursor: pointer;
 }
 
-/* hamburger hidden on desktop */
-.menu-btn {
-  display: none;
-  font-size: 22px;
-  line-height: 1;
-  background: transparent;
-  border: 0;
-  color: white;
-  cursor: pointer;
-}
-
-/* mobile dropdown */
-.mobile-menu {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 12px 14px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-}
-
-.mobile-item {
-  background: transparent;
-  border: 0;
-  color: white;
-  text-align: left;
-  padding: 6px 4px;
-  cursor: pointer;
-}
-
-/* breakpoints */
+/* --- mobile rules: hide logo, center tabs --- */
 @media (max-width: 768px) {
-  .tabs {
+  .logo {
     display: none;
-  } /* hide desktop links */
-  .menu-btn {
-    display: inline-block;
-  } /* show hamburger */
+  }
 
-  /* rounder/compact bar on small screens */
   .navbar {
+    justify-content: center;
     border-radius: 28px;
     padding: 12px 16px;
   }
-  .logo h1 {
-    font-size: clamp(16px, 5vw, 22px);
+
+  .tabs {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 18px;
+    font-size: 0.95rem;
   }
 }
 
+/* keep content from hiding under fixed bar */
 body {
   padding-top: 72px;
 }

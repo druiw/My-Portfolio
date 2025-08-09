@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import Resume from "../../assets/Resume/Drew Igoe - SWE Intern.pdf";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <div className='navbar-wrapper'>
       <nav className='navbar'>
@@ -12,7 +10,6 @@ const Navbar = () => {
           <h1>{"</> Drew Igoe"}</h1>
         </div>
 
-        {/* Desktop menu */}
         <div className='tabs'>
           <p
             className='item'
@@ -49,38 +46,7 @@ const Navbar = () => {
             Resume
           </p>
         </div>
-
-        {/* Mobile hamburger */}
-        <button
-          className='menu-btn'
-          aria-label='Toggle menu'
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          ☰
-        </button>
       </nav>
-
-      {/* Mobile dropdown */}
-      {open && (
-        <div className='mobile-menu'>
-          <button className='mobile-item' onClick={() => setOpen(false)}>
-            Home
-          </button>
-          <button className='mobile-item' onClick={() => setOpen(false)}>
-            Projects
-          </button>
-          <button className='mobile-item' onClick={() => setOpen(false)}>
-            Github
-          </button>
-          <button className='mobile-item' onClick={() => setOpen(false)}>
-            LinkedIn
-          </button>
-          <button className='mobile-item' onClick={() => setOpen(false)}>
-            Resume
-          </button>
-        </div>
-      )}
     </div>
   );
 };
