@@ -134,8 +134,7 @@ const Main = () => {
                   <div
                     className='link-button'
                     onClick={() =>
-                      (window.location.href =
-                        "https://inventory-manager-nine-iota.vercel.app/")
+                      (window.location.href = "https://miso-gray.vercel.app/")
                     }
                   >
                     <TbPaperclip />
@@ -175,7 +174,7 @@ const Main = () => {
                     className='link-button'
                     onClick={() =>
                       (window.location.href =
-                        "https://inventory-manager-nine-iota.vercel.app/")
+                        "https://roadmap-generator-gamma.vercel.app/")
                     }
                   >
                     <TbPaperclip />
@@ -210,8 +209,7 @@ const Main = () => {
                   <div
                     className='link-button'
                     onClick={() =>
-                      (window.location.href =
-                        "https://inventory-manager-nine-iota.vercel.app/")
+                      (window.location.href = "https://github.com/druiw/Activ")
                     }
                   >
                     <TbPaperclip />
