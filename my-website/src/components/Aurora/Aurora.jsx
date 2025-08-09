@@ -195,12 +195,6 @@ export default function Aurora(props) {
       window.removeEventListener("resize", resize);
       if (ctn && gl.canvas.parentNode === ctn) {
         ctn.removeChild(gl.canvas);
-        gl.canvas.style.position = "absolute";
-        gl.canvas.style.top = "0";
-        gl.canvas.style.left = "0";
-        gl.canvas.style.width = "100%";
-        gl.canvas.style.height = "100%";
-        gl.canvas.style.display = "block";
       }
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };

@@ -1,25 +1,9 @@
 .aurora-container {
   position: fixed;
-  inset: 0;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-}
-
-#root,
-.container,
-main,
-.app {
-  position: relative;
-  z-index: 1;
-}
-
-/* (Optional) remove any global top padding that was added for “safe area” */
-html,
-body {
-  margin: 0;
-  padding: 0;
 }
