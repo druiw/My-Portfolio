@@ -84,14 +84,14 @@ const Main = () => {
                 style={{ cursor: "pointer" }}
               />
               <div className='project-text'>
-                <h2 className='project-title'>Inventory Manager</h2>
+                <h2 className='project-title'>Shelf Sync</h2>
                 <p className='project-desc'>
-                  A web application for managing inventory, built to explore
-                  real-time database integration with Supabase. Users can add,
-                  edit, and remove products with instant updates. Features a
-                  clean interface to track stock levels, product IDs, and
-                  quantities, demonstrating skills in full-stack development and
-                  cloud database management.
+                  A modern inventory management web app powered by Supabase.
+                  Shelf Sync lets users add, edit, and remove products with
+                  real-time updates, making it easy to track stock levels,
+                  product IDs, and quantities. Designed with a clean, responsive
+                  interface, it showcases skills in full-stack development,
+                  real-time data handling, and cloud database integration.
                 </p>
                 <p className='project-desc'>React • JavaScript • Supabase</p>
                 <div className='link-button-wrapper'>
