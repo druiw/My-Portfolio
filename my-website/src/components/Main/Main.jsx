@@ -52,9 +52,9 @@ const Main = () => {
               I'm Drew Igoe. Computer Science Student in Tempe, from Boston, MA.
             </p>
             <p>
-              I focus on software development and UI/UX design, creating
-              intuitive, visually appealing, and high-performance applications
-              that deliver meaningful user experiences.
+              I focus on software engineering and UI/UX. I design simple, clear
+              interfaces and build them with performance, accessibility, and
+              clean architecture in mind.
             </p>
             <p>
               When I'm not coding, I'm at the gym or catching up with friends.
