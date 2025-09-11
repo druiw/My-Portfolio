@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import Resume from "../../assets/Resume/Drew_Igoe_SWE_Intern.pdf";
+import Resume from "../../assets/Resume/Drew_Igoe_Resume.pdf";
 
 const Navbar = () => {
   return (
