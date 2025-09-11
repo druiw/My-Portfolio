@@ -35,9 +35,9 @@ const Main = () => {
             </h1>
             <h2 className='subtitle'>Computer Science Student at ASU</h2>
             <p className='description'>
-              Bridging the gap between design and development. <br />
-              I’m a CS student passionate about creating clean, <br />{" "}
-              functional, and user-friendly products.
+              Crafting software that balances design and engineering. <br />
+              As a CS student, I focus on building products that are <br />
+              practical, scalable, and delightful to use.
             </p>
           </div>
         </div>
